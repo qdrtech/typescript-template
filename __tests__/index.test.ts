@@ -17,7 +17,7 @@ describe('prompt function', () => {
     });
 
     // Teardown after assertions
-    afterAll(async () => {
+    afterAll(() => {
         timeoutSpy.mockRestore();
     });
 
@@ -29,9 +29,9 @@ describe('prompt function', () => {
             Delay.Medium
         );
     });
-    
+
     // SayHello should return `Hello ${name}`
-    it(`sayHello returns ${sayHelloResponse}`, async () => {
+    it(`sayHello should return ${sayHelloResponse}`, async () => {
         expect(hello).toBe(sayHelloResponse);
-    })
+    });
 })
