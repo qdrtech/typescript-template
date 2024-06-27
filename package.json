@@ -1,6 +1,6 @@
 {
   "name": "typescript-boilerplate-template",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Minimalistic boilerplate to jump start a Node.js project with TypeScript",
   "main": "./src/index.ts",
   "engines": {
