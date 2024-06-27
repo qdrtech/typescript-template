@@ -1,0 +1,37 @@
+{
+  "name": "typescript-boilerplate-template",
+  "version": "0.0.0",
+  "description": "Minimalistic boilerplate to jump start a Node.js project with TypeScript",
+  "main": "./src/index.ts",
+  "engines": {
+    "node": ">= 18.20 < 21"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.9",
+    "@typescript-eslint/parser": "^7.14.1",
+    "eslint": "^9.5.0",
+    "eslint-plugin-jest": "^28.6.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.5",
+    "typescript": "^5.5.2"
+  },
+  "scripts": {
+    "start": "node build/src/index.js",
+    "clean": "rimraf coverage build tmp",
+    "prebuild": "npm run lint",
+    "build": "tsc -p tsconfig.json",
+    "build:watch": "tsc -w -p tsconfig.json",
+    "build:release": "npm run clean && tsc -p tsconfig.release.json",
+    "lint": "eslint . --ext .ts --ext .mts",
+    "test": "jest --coverage",
+    "prettier": "prettier --config .prettierrc --write .",
+    "test:watch": "jest --watch"
+  },
+  "repository": "git@github.com:qdrtech/typescript-template.git",
+  "author": "qdr_tech <qdr.dev@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "tslib": "^2.6.3"
+  }
+}
