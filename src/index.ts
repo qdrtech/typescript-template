@@ -61,7 +61,7 @@ export const prompt = (query: string): Promise<string> => {
 /**
  * Greeting handler which reads input from the user and returns name on a setTimeout delay
  */
-export const greeting = async ():Promise<void> => {
+const greeting = async ():Promise<void> => {
     let name: string;
     let delay: string;
 
@@ -81,3 +81,7 @@ export const greeting = async ():Promise<void> => {
 
     console.info(message);
 }
+
+(() => {
+    greeting();
+})();
