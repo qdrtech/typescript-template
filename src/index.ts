@@ -14,7 +14,6 @@ export enum Delay {
  * @param {delay} [delay=Delay.Medium] - A number of miliseconds that controls how fast the promise resolves
  * @returns {Promise<string>}
  */
-
 const delayHello = (
     name:string,
     delay:Delay

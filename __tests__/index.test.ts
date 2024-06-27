@@ -29,7 +29,8 @@ describe('prompt function', () => {
             Delay.Medium
         );
     });
-
+    
+    // SayHello should return `Hello ${name}`
     it(`sayHello returns ${sayHelloResponse}`, async () => {
         expect(hello).toBe(sayHelloResponse);
     })
